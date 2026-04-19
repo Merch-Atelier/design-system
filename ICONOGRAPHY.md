@@ -62,7 +62,7 @@ Stay consistent with this mapping across the system:
 | Warning | `ph-warning-circle` | <img src="https://unpkg.com/@phosphor-icons/core@2.1.1/assets/regular/warning-circle.svg" width="20"> |
 | Error | `ph-x-circle` | <img src="https://unpkg.com/@phosphor-icons/core@2.1.1/assets/regular/x-circle.svg" width="20"> |
 | Info | `ph-info` | <img src="https://unpkg.com/@phosphor-icons/core@2.1.1/assets/regular/info.svg" width="20"> |
-| In production | `clock-countdown` | <img src="https://unpkg.com/@phosphor-icons/core@2.1.1/assets/regular/package.svg" width="20"> |
+| In production | `ph-clock-countdown` | <img src="https://unpkg.com/@phosphor-icons/core@2.1.1/assets/regular/clock-countdown.svg" width="20"> |
 | Shipped | `ph-truck` | <img src="https://unpkg.com/@phosphor-icons/core@2.1.1/assets/regular/truck.svg" width="20"> |
 | Delivered | `ph-check-square` | <img src="https://unpkg.com/@phosphor-icons/core@2.1.1/assets/regular/check-square.svg" width="20"> |
 | Approve | `ph-check` | <img src="https://unpkg.com/@phosphor-icons/core@2.1.1/assets/regular/check.svg" width="20"> |
