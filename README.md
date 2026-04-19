@@ -30,8 +30,8 @@ No Figma file or existing codebase was provided. Components in `ui_kits/` are bu
 Voice is **editorial, confident, quietly crafted.** Copy reads like a small design studio wrote it — short sentences, no marketing breathlessness, no urgency tactics, no discount language.
 
 ### Tone & diction
-- **Partnership over transaction.** We say "Let's build your collection" instead of "Shop now."
-- **Craft-aware nouns.** "Piece," "collection," "proof," "production run," "vendor" — not "SKU," "item," "inventory."
+- **Partnership over transaction.** We say "Let's build your collection" or "Start a project" — never "Shop now."
+- **Craft-aware nouns.** "Piece," "collection," "proof," "production run," "vendor." Use **"collection"** when presenting a catalog of items for the client to choose from; use **"item"** in all other contexts. Use **"inventory"** only when discussing a warehousing or fulfillment project. Never use "SKU."
 - **Understated adjectives.** "Considered," "refined," "tactile," "enduring" — not "premium," "amazing," "revolutionary."
 - **Second person, warm but reserved.** We address the client as "you," refer to ourselves as "we." Never "I." Never "Merch Atelier" in third person inside the product.
 
@@ -51,14 +51,14 @@ Voice is **editorial, confident, quietly crafted.** Copy reads like a small desi
 | Case study | Testimonial / Customer story |
 | Client | Customer |
 
-**Kept as-is** (retained per brand direction): *Item*, *SKU*, *Your cart*, *Shop now*, *Get started*, *Team*, *Company*, *Studio*. These are recognized terms customers and internal users already scan for — don't fight the pattern.
+**Kept as-is** (retained per brand direction): *SKU*, *Your cart*, *Get started*, *Team*, *Company*, *Studio*. These are recognized terms customers and internal users already scan for — don't fight the pattern.
 
 ### Example microcopy
 - **Empty state (collection):** *Nothing here yet. Start by browsing the catalog or telling us what you have in mind — we'll build a collection together.*
 - **Quote confirmation:** *Thanks — we've received your brief. A designer from the studio will be in touch within one business day.*
 - **Production status:** *In production · Expected ship 14 Nov*
 - **Error (form):** *We need a contact email to send your proof.* (Not: "Invalid input.")
-- **CTA button:** `Request a quote`, `Start a brief`, `Review proof`, `Approve & produce`.
+- **CTA button:** `Request a quote`, `Start a project`, `Review proof`, `Approve & produce`.
 
 ### Numbers, dates, currency
 - Dates spelled with abbreviated month: `14 Nov 2026`. No ordinals ("14th").
