@@ -46,32 +46,32 @@ Never stroke-color icons with off-brand colors.
 
 Stay consistent with this mapping across the system:
 
-| Concept | Phosphor |
-|---|---|
-| Catalog / browse | `ph-squares-four` |
-| Collection (cart) | `ph-shopping-bag` |
-| Quote request | `ph-file-text` |
-| Proof / artwork | `ph-image-square` |
-| Studio / team | `ph-users-three` |
-| Case study / journal | `ph-book-open-text` |
-| Client account | `ph-user-circle` |
-| Search | `ph-magnifying-glass` |
-| Filter | `ph-sliders-horizontal` |
-| Sort | `ph-arrows-down-up` |
-| Success | `ph-check-circle` |
-| Warning | `ph-warning-circle` |
-| Error | `ph-x-circle` |
-| Info | `ph-info` |
-| In production | `ph-package` |
-| Shipped | `ph-truck` |
-| Delivered | `ph-check-square` |
-| Approve | `ph-check` |
-| Reject / revise | `ph-arrow-u-up-left` |
-| Download | `ph-download-simple` |
-| Upload artwork | `ph-upload-simple` |
-| Message vendor | `ph-chat-circle` |
-| Close | `ph-x` |
-| Caret / nav | `ph-caret-right`, `ph-caret-down` |
+| Concept | Phosphor | Preview |
+|---|---|---|
+| Catalog / browse | `ph-squares-four` | <img src="https://unpkg.com/@phosphor-icons/core@2.1.1/assets/regular/squares-four.svg" width="20"> |
+| Collection (cart) | `ph-shopping-bag` | <img src="https://unpkg.com/@phosphor-icons/core@2.1.1/assets/regular/shopping-bag.svg" width="20"> |
+| Quote request | `ph-file-text` | <img src="https://unpkg.com/@phosphor-icons/core@2.1.1/assets/regular/file-text.svg" width="20"> |
+| Proof / artwork | `ph-image-square` | <img src="https://unpkg.com/@phosphor-icons/core@2.1.1/assets/regular/image-square.svg" width="20"> |
+| Studio / team | `ph-users-three` | <img src="https://unpkg.com/@phosphor-icons/core@2.1.1/assets/regular/users-three.svg" width="20"> |
+| Case study / journal | `ph-book-open-text` | <img src="https://unpkg.com/@phosphor-icons/core@2.1.1/assets/regular/book-open-text.svg" width="20"> |
+| Client account | `ph-user-circle` | <img src="https://unpkg.com/@phosphor-icons/core@2.1.1/assets/regular/user-circle.svg" width="20"> |
+| Search | `ph-magnifying-glass` | <img src="https://unpkg.com/@phosphor-icons/core@2.1.1/assets/regular/magnifying-glass.svg" width="20"> |
+| Filter | `ph-sliders-horizontal` | <img src="https://unpkg.com/@phosphor-icons/core@2.1.1/assets/regular/sliders-horizontal.svg" width="20"> |
+| Sort | `ph-arrows-down-up` | <img src="https://unpkg.com/@phosphor-icons/core@2.1.1/assets/regular/arrows-down-up.svg" width="20"> |
+| Success | `ph-check-circle` | <img src="https://unpkg.com/@phosphor-icons/core@2.1.1/assets/regular/check-circle.svg" width="20"> |
+| Warning | `ph-warning-circle` | <img src="https://unpkg.com/@phosphor-icons/core@2.1.1/assets/regular/warning-circle.svg" width="20"> |
+| Error | `ph-x-circle` | <img src="https://unpkg.com/@phosphor-icons/core@2.1.1/assets/regular/x-circle.svg" width="20"> |
+| Info | `ph-info` | <img src="https://unpkg.com/@phosphor-icons/core@2.1.1/assets/regular/info.svg" width="20"> |
+| In production | `ph-package` | <img src="https://unpkg.com/@phosphor-icons/core@2.1.1/assets/regular/package.svg" width="20"> |
+| Shipped | `ph-truck` | <img src="https://unpkg.com/@phosphor-icons/core@2.1.1/assets/regular/truck.svg" width="20"> |
+| Delivered | `ph-check-square` | <img src="https://unpkg.com/@phosphor-icons/core@2.1.1/assets/regular/check-square.svg" width="20"> |
+| Approve | `ph-check` | <img src="https://unpkg.com/@phosphor-icons/core@2.1.1/assets/regular/check.svg" width="20"> |
+| Reject / revise | `ph-arrow-u-up-left` | <img src="https://unpkg.com/@phosphor-icons/core@2.1.1/assets/regular/arrow-u-up-left.svg" width="20"> |
+| Download | `ph-download-simple` | <img src="https://unpkg.com/@phosphor-icons/core@2.1.1/assets/regular/download-simple.svg" width="20"> |
+| Upload artwork | `ph-upload-simple` | <img src="https://unpkg.com/@phosphor-icons/core@2.1.1/assets/regular/upload-simple.svg" width="20"> |
+| Message vendor | `ph-chat-circle` | <img src="https://unpkg.com/@phosphor-icons/core@2.1.1/assets/regular/chat-circle.svg" width="20"> |
+| Close | `ph-x` | <img src="https://unpkg.com/@phosphor-icons/core@2.1.1/assets/regular/x.svg" width="20"> |
+| Caret / nav | `ph-caret-right`, `ph-caret-down` | <img src="https://unpkg.com/@phosphor-icons/core@2.1.1/assets/regular/caret-right.svg" width="20"> <img src="https://unpkg.com/@phosphor-icons/core@2.1.1/assets/regular/caret-down.svg" width="20"> |
 
 ## Things we don't do
 
