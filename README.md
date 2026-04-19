@@ -55,8 +55,8 @@ Voice is **editorial, confident, quietly crafted.** Copy reads like a small desi
 
 ### Example microcopy
 - **Empty state (collection):** *Nothing here yet. Start by browsing the catalog or telling us what you have in mind — we'll build a collection together.*
-- **Quote confirmation:** *Thanks — we've received your brief. A designer from the studio will be in touch within one business day.*
-- **Production status:** *In production · Expected ship 14 Nov*
+- **Quote confirmation:** *Thanks — we've received your project request. We will be in touch within one business day.*
+- **Production status:** *In production · Expected ship 14 Nov 2026*
 - **Error (form):** *We need a contact email to send your proof.* (Not: "Invalid input.")
 - **CTA button:** `Request a quote`, `Start a project`, `Review proof`, `Approve & produce`.
 
