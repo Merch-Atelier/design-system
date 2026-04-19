@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="../colors_and_type.css" />
+<style>
+  body { margin:0; padding:28px 24px; background:#F5F3ED; display:flex; align-items:center; justify-content:center; gap:14px; flex-wrap:wrap; }
+  .btn {
+    font-family: var(--font-sans); font-weight:700; font-size:12px; text-transform:uppercase; letter-spacing:.12em;
+    padding: 14px 22px; border-radius: 6px; border: 1px solid transparent; cursor:pointer;
+    transition: all 180ms cubic-bezier(.22,.61,.36,1);
+  }
+  .primary { background:#242424; color:#F5F3ED; }
+  .primary:hover { background:#3A3832; }
+  .secondary { background:transparent; color:#242424; border-color:#242424; }
+  .secondary:hover { background:#E3DED2; }
+  .ghost { background:transparent; color:#242424; border-color: transparent; position:relative; padding-left:0; padding-right:0; }
+  .ghost::after { content:''; position:absolute; left:0; right:0; bottom:4px; height:1px; background:#242424; }
+  .ghost:hover { color:#8C7A65; }
+  .ghost:hover::after { background:#8C7A65; height:1.5px; }
+</style>
+</head>
+<body>
+  <button class="btn primary">Request a quote</button>
+  <button class="btn secondary">View catalog</button>
+  <button class="btn ghost">Learn more</button>
+</body>
+</html>

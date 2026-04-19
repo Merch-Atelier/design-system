@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="../colors_and_type.css" />
+<style>
+  body { margin:0; padding:28px; background:#F5F3ED; display:grid; grid-template-columns: 1fr 1fr; gap:22px; }
+  .card { background:#FFFFFF; border-radius: 12px; overflow:hidden; box-shadow: 0 1px 2px rgba(36,36,36,.04), 0 2px 6px rgba(36,36,36,.04); transition: all 220ms cubic-bezier(.22,.61,.36,1); }
+  .card.hover { transform: translateY(-3px); box-shadow: 0 2px 4px rgba(36,36,36,.05), 0 8px 20px rgba(36,36,36,.06); }
+  .img { aspect-ratio: 4/3; background: linear-gradient(160deg,#E3DED2,#BAB3A3); position:relative; overflow:hidden; }
+  .img::after { content:''; position:absolute; inset:40% 30% 15% 35%; background:#6E685D; border-radius: 50% 50% 10% 10% / 60% 60% 10% 10%; opacity:.55; }
+  .body { padding: 16px 18px 20px; }
+  .cat { font-family: var(--font-sans); font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:.12em; color:#8C7A65; }
+  .name { font-family: var(--font-display); font-weight:500; font-size: 20px; color:#242424; margin: 6px 0 4px; line-height:1.2; }
+  .name em { font-style: italic; color:#8C7A65; font-weight:400; }
+  .meta { font-family: var(--font-sans); font-size: 13px; color:#6E685D; }
+  .price { font-family: var(--font-mono); font-size: 12px; color:#4A453E; margin-top:10px; display:block; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="img"></div>
+    <div class="body">
+      <span class="cat">Apparel</span>
+      <div class="name">The Heavyweight <em>Tee</em></div>
+      <div class="meta">240 gsm · organic cotton</div>
+      <span class="price">from $18 / pc · min 50</span>
+    </div>
+  </div>
+  <div class="card hover">
+    <div class="img" style="background: linear-gradient(160deg,#D2CBBC,#8F887B);"></div>
+    <div class="body">
+      <span class="cat">Drinkware</span>
+      <div class="name">Ceramic <em>Tumbler</em></div>
+      <div class="meta">12 oz · satin glaze</div>
+      <span class="price">from $14 / pc · min 50</span>
+    </div>
+  </div>
+</body>
+</html>

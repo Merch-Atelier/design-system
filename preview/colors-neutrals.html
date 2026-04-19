@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="../colors_and_type.css" />
+<style>
+  body { margin:0; padding:24px; background:#FAFAF7; }
+  .row { display:grid; grid-template-columns: repeat(10, 1fr); gap:6px; }
+  .sw {
+    aspect-ratio: 1 / 1.15; border-radius: 6px;
+    padding:8px; display:flex; flex-direction:column; justify-content:space-between;
+    font-family: var(--font-sans);
+  }
+  .num { font-size: 11px; font-weight:600; }
+  .hex { font-family: var(--font-mono); font-size: 9px; letter-spacing:.02em; }
+  .hairline { border: 1px solid rgba(36,36,36,0.08); }
+</style>
+</head>
+<body>
+  <div class="row">
+    <div class="sw hairline" style="background:#FAFAF7; color:#4A453E;"><span class="num">50</span><span class="hex">FAFAF7</span></div>
+    <div class="sw hairline" style="background:#F5F3ED; color:#4A453E;"><span class="num">100</span><span class="hex">F5F3ED</span></div>
+    <div class="sw" style="background:#E3DED2; color:#4A453E;"><span class="num">200</span><span class="hex">E3DED2</span></div>
+    <div class="sw" style="background:#D2CBBC; color:#3A3832;"><span class="num">300</span><span class="hex">D2CBBC</span></div>
+    <div class="sw" style="background:#BAB3A3; color:#2E2C28;"><span class="num">400</span><span class="hex">BAB3A3</span></div>
+    <div class="sw" style="background:#8F887B; color:#F5F3ED;"><span class="num">500</span><span class="hex">8F887B</span></div>
+    <div class="sw" style="background:#6E685D; color:#E3DED2;"><span class="num">600</span><span class="hex">6E685D</span></div>
+    <div class="sw" style="background:#4A453E; color:#E3DED2;"><span class="num">700</span><span class="hex">4A453E</span></div>
+    <div class="sw" style="background:#3A3832; color:#BAB3A3;"><span class="num">800</span><span class="hex">3A3832</span></div>
+    <div class="sw" style="background:#242424; color:#BAB3A3;"><span class="num">900</span><span class="hex">242424</span></div>
+  </div>
+</body>
+</html>

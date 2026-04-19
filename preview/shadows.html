@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="../colors_and_type.css" />
+<style>
+  body { margin:0; padding:32px 24px; background:#F5F3ED; }
+  .row { display:grid; grid-template-columns: repeat(4, 1fr); gap:22px; }
+  .item { display:flex; flex-direction:column; align-items:center; gap:12px; }
+  .tile { width: 110px; height: 72px; background:#FFFFFF; border-radius: 8px; }
+  .xs { box-shadow: 0 1px 2px rgba(36,36,36,.04); }
+  .sm { box-shadow: 0 1px 2px rgba(36,36,36,.04), 0 2px 6px rgba(36,36,36,.04); }
+  .md { box-shadow: 0 2px 4px rgba(36,36,36,.05), 0 8px 20px rgba(36,36,36,.06); }
+  .lg { box-shadow: 0 4px 8px rgba(36,36,36,.05), 0 16px 40px rgba(36,36,36,.09); }
+  .label { font-family: var(--font-mono); font-size: 11px; color:#6E685D; }
+</style>
+</head>
+<body>
+  <div class="row">
+    <div class="item"><div class="tile xs"></div><span class="label">xs</span></div>
+    <div class="item"><div class="tile sm"></div><span class="label">sm · resting</span></div>
+    <div class="item"><div class="tile md"></div><span class="label">md · hover</span></div>
+    <div class="item"><div class="tile lg"></div><span class="label">lg · modal</span></div>
+  </div>
+</body>
+</html>

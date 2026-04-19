@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="../colors_and_type.css" />
+<style>
+  body { margin:0; padding:22px 28px; background:#FAFAF7; font-family: var(--font-sans); color:#242424; }
+  .row { display:grid; grid-template-columns: 1fr 1fr; gap:10px 32px; font-size: 13px; }
+  .row > div { display:flex; justify-content:space-between; padding: 6px 0; border-bottom: 1px solid rgba(36,36,36,.06); }
+  .l { color:#6E685D; }
+  .r { color:#242424; font-weight:500; }
+  .r s { font-family: var(--font-display); font-style:italic; color:#8C7A65; text-decoration:none; font-weight:400; }
+  .keep { font-family: var(--font-sans); font-size: 11px; color:#6E685D; margin-top: 14px; padding-top: 12px; border-top: 1px solid rgba(36,36,36,.06); line-height: 1.5; }
+  .keep strong { color:#242424; font-weight: 600; }
+</style>
+</head>
+<body>
+  <div class="row">
+    <div><span class="l">Add to cart</span><span class="r"><s>Request a quote</s></span></div>
+    <div><span class="l">Processing</span><span class="r"><s>In production</s></span></div>
+    <div><span class="l">Build your own</span><span class="r"><s>Start a project</s></span></div>
+    <div><span class="l">Testimonial</span><span class="r"><s>Case study</s></span></div>
+    <div><span class="l">Customer</span><span class="r"><s>Client</s></span></div>
+    <div><span class="l">Catalog listing</span><span class="r"><s>Collection</s></span></div>
+    <div><span class="l">Awaiting approval</span><span class="r"><s>Proof ready for review</s></span></div>
+  </div>
+  <div class="keep"><strong>Kept as-is:</strong> Item, SKU, Your cart, Shop now, Get started, Team, Company, Studio.</div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="../colors_and_type.css" />
+<style>
+  body { margin:0; padding:24px; background:#FAFAF7; }
+  .grid { display:grid; grid-template-columns: repeat(4, 1fr); gap:14px; }
+  .item { display:flex; gap:12px; align-items:stretch; }
+  .chip { width: 12px; flex-shrink:0; border-radius:4px; }
+  .body { flex:1; display:flex; flex-direction:column; justify-content:center; }
+  .role { font-family: var(--font-sans); font-weight:700; font-size:11px; letter-spacing:.12em; text-transform:uppercase; color:#242424; }
+  .name { font-family: var(--font-display); font-style:italic; font-size: 18px; color:#4A453E; margin-top: 2px; line-height:1.1; }
+  .hex  { font-family: var(--font-mono); font-size: 11px; color:#6E685D; margin-top:4px; }
+</style>
+</head>
+<body>
+  <div class="grid">
+    <div class="item"><div class="chip" style="background:#6F8452;"></div>
+      <div class="body"><span class="role">Success</span><span class="name">Sage</span><span class="hex">#6F8452</span></div></div>
+    <div class="item"><div class="chip" style="background:#C68A2E;"></div>
+      <div class="body"><span class="role">Warning</span><span class="name">Ochre</span><span class="hex">#C68A2E</span></div></div>
+    <div class="item"><div class="chip" style="background:#B04A3B;"></div>
+      <div class="body"><span class="role">Error</span><span class="name">Terracotta</span><span class="hex">#B04A3B</span></div></div>
+    <div class="item"><div class="chip" style="background:#5B7B95;"></div>
+      <div class="body"><span class="role">Info</span><span class="name">Dusty Slate</span><span class="hex">#5B7B95</span></div></div>
+  </div>
+</body>
+</html>

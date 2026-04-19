@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="../colors_and_type.css" />
+<style>
+  body { margin:0; padding:24px; background:#F5F3ED; display:flex; align-items:center; justify-content:center; gap:10px; flex-wrap:wrap; }
+  .tag {
+    font-family: var(--font-sans); font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:.12em;
+    padding: 6px 10px; border-radius: 4px; display:inline-flex; align-items:center; gap:6px;
+  }
+  .dot { width:6px; height:6px; border-radius:50%; display:inline-block; }
+  .neutral { background:#E3DED2; color:#3A3832; }
+  .success { background:#EAEEDF; color:#4B5A37; }
+  .warning { background:#F6E8CE; color:#815821; }
+  .error   { background:#F1D9D2; color:#7C3126; }
+  .info    { background:#DCE5ED; color:#3D5569; }
+  .cat { background:transparent; color:#242424; border: 1px solid rgba(36,36,36,.22); }
+</style>
+</head>
+<body>
+  <span class="tag neutral"><span class="dot" style="background:#6E685D;"></span>Draft</span>
+  <span class="tag success"><span class="dot" style="background:#6F8452;"></span>Approved</span>
+  <span class="tag warning"><span class="dot" style="background:#C68A2E;"></span>Awaiting proof</span>
+  <span class="tag info"><span class="dot" style="background:#5B7B95;"></span>In production</span>
+  <span class="tag error"><span class="dot" style="background:#B04A3B;"></span>Revisions needed</span>
+  <span class="tag cat">Apparel</span>
+  <span class="tag cat">Organic cotton</span>
+</body>
+</html>

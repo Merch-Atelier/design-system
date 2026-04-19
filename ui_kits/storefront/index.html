@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Merch Atelier — Storefront</title>
+<link rel="stylesheet" href="../../colors_and_type.css" />
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css" />
+<style>
+  html, body, #root { height: 100%; }
+  body { margin: 0; background: #F5F3ED; color: #242424; }
+  .scroll-root { height: 100vh; overflow-y: auto; }
+</style>
+</head>
+<body>
+<div id="root"></div>
+
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+
+<script type="text/babel" src="Components.jsx"></script>
+<script type="text/babel" src="Nav.jsx"></script>
+<script type="text/babel" src="Home.jsx"></script>
+<script type="text/babel" src="Catalog.jsx"></script>
+<script type="text/babel" src="Product.jsx"></script>
+<script type="text/babel" src="Quote.jsx"></script>
+<script type="text/babel" src="Account.jsx"></script>
+
+<script type="text/babel">
+const { useState, useEffect } = React;
+
+function App() {
+  const [view, setView] = useState(() => localStorage.getItem('ma_view') || 'home');
+  const [product, setProduct] = useState(null);
+  const [collection, setCollection] = useState(2);
+
+  useEffect(() => { localStorage.setItem('ma_view', view); }, [view]);
+
+  const navigate = (v, payload) => {
+    if (v === 'product' && payload) setProduct(payload);
+    if (v === 'quote' && payload) setProduct(payload);
+    setView(v);
+    document.querySelector('.scroll-root')?.scrollTo({ top: 0, behavior: 'instant' });
+  };
+
+  let body;
+  switch (view) {
+    case 'catalog':    body = <Catalog onNavigate={navigate} />; break;
+    case 'product':    body = <Product product={product} onNavigate={navigate} onAddToCollection={()=>setCollection(c=>c+1)} />; break;
+    case 'quote':      body = <Quote onNavigate={navigate} product={product} />; break;
+    case 'account':    body = <Account onNavigate={navigate} />; break;
+    case 'cases':
+    case 'studio':
+    case 'journal':    body = <Placeholder label={view} onNavigate={navigate} />; break;
+    default:           body = <Home onNavigate={navigate} />;
+  }
+
+  return (
+    <div className="scroll-root" data-screen-label={`storefront-${view}`}>
+      <Nav current={view} onNavigate={navigate} collectionCount={collection} />
+      {body}
+      <Footer />
+    </div>
+  );
+}
+
+function Placeholder({ label, onNavigate }) {
+  const titles = {
+    cases: ['Case', 'studies'],
+    studio: ['The', 'studio'],
+    journal: ['The', 'journal'],
+    collection: ['Your', 'collection'],
+  };
+  const [t1, t2] = titles[label] || ['', label];
+  return (
+    <section style={{ padding: '120px 32px', maxWidth: 960, margin: '0 auto', textAlign: 'center' }}>
+      <Eyebrow>{label}</Eyebrow>
+      <h1 style={{ fontFamily:'"Playfair Display", serif', fontSize: 72, fontWeight:400, letterSpacing:'-0.01em', lineHeight: 1.05, margin: '18px 0 0' }}>
+        {t1} <em style={{ fontStyle:'italic', color:'#8C7A65', fontWeight:400 }}>{t2}.</em>
+      </h1>
+      <p style={{ fontFamily:'Montserrat, sans-serif', fontSize: 18, color:'#4A453E', lineHeight: 1.65, margin:'24px auto 0', maxWidth: 560 }}>
+        This screen would live here in the full storefront — case-study index, team bios, or long-form journal. Left quiet in the UI kit to keep the surface focused.
+      </p>
+      <div style={{ marginTop: 32 }}>
+        <Button variant="secondary" onClick={()=>onNavigate('home')}>Back home</Button>
+      </div>
+    </section>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+</script>
+</body>
+</html>

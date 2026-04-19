@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="../colors_and_type.css" />
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css" />
+<style>
+  body { margin:0; padding:28px; background:#F5F3ED; display:flex; flex-direction:column; gap:12px; }
+  .alert { display:flex; gap:14px; align-items:flex-start; padding:14px 16px; border-radius: 8px; border: 1px solid; }
+  .alert i { font-size: 20px; flex-shrink:0; margin-top:1px; }
+  .alert .title { font-family: var(--font-sans); font-size: 14px; font-weight:600; color:#242424; margin:0 0 2px; }
+  .alert .body { font-family: var(--font-sans); font-size: 13px; color:#4A453E; margin:0; line-height:1.5; }
+  .success { background:#EAEEDF; border-color: rgba(111,132,82,.35); }
+  .success i { color:#6F8452; }
+  .warning { background:#F6E8CE; border-color: rgba(198,138,46,.35); }
+  .warning i { color:#C68A2E; }
+  .error   { background:#F1D9D2; border-color: rgba(176,74,59,.35); }
+  .error i { color:#B04A3B; }
+</style>
+</head>
+<body>
+  <div class="alert success"><i class="ph ph-check-circle"></i><div><p class="title">Proof approved</p><p class="body">Production will begin this afternoon. Expected ship 14 Nov.</p></div></div>
+  <div class="alert warning"><i class="ph ph-warning-circle"></i><div><p class="title">Awaiting your review</p><p class="body">Your proof for the Heavyweight Tee is ready.</p></div></div>
+  <div class="alert error"><i class="ph ph-x-circle"></i><div><p class="title">We need a contact email</p><p class="body">We use this to send your proof before production.</p></div></div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="../colors_and_type.css" />
+<style>
+  body { margin:0; padding:24px; background:#6E685D; }
+  .row { display:grid; grid-template-columns: repeat(3, 1fr); gap:14px; }
+  .card {
+    border-radius: 10px; padding:18px; min-height: 120px;
+    display:flex; flex-direction:column; justify-content:space-between;
+    font-family: var(--font-sans);
+  }
+  .label { font-size: 11px; font-weight:700; letter-spacing:.12em; text-transform:uppercase; }
+  .name { font-family: var(--font-display); font-style: italic; font-size: 20px; line-height:1; }
+  .hex  { font-family: var(--font-mono); font-size: 11px; letter-spacing:.02em; }
+</style>
+</head>
+<body>
+  <div class="row">
+    <div class="card" style="background:#F5F3ED; color:#242424; border:1px solid rgba(36,36,36,0.08);">
+      <span class="label" style="color:#6E685D;">Page</span>
+      <div>
+        <div class="name">Parchment</div>
+        <div class="hex" style="color:#6E685D;">#F5F3ED</div>
+      </div>
+    </div>
+    <div class="card" style="background:#FFFFFF; color:#242424; border:1px solid rgba(36,36,36,0.08); box-shadow: 0 4px 8px rgba(36,36,36,.05), 0 16px 40px rgba(36,36,36,.09);">
+      <span class="label" style="color:#6E685D;">Card · elevated</span>
+      <div>
+        <div class="name">Pure White</div>
+        <div class="hex" style="color:#6E685D;">#FFFFFF</div>
+      </div>
+    </div>
+    <div class="card" style="background:#E3DED2; color:#242424;">
+      <span class="label" style="color:#4A453E;">Muted</span>
+      <div>
+        <div class="name">Parchment 200</div>
+        <div class="hex" style="color:#4A453E;">#E3DED2</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
